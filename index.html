@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo" alt="logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Woman</a>
+            <a href="#">Man</a>
+            <a href="#">Contact</a>
+            <a href="#">Shop</a>
+        </div>
+        <div class="cart-actions">
+            <button class="view-cart">View Cart</button>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="image-slider">
+            <img class="slide active" src="shoe pic 2" alt="Product Image">
+            <img class="slide" src="shoe pic 1" alt="Product Image">
+            <img class="slide" src="shoe pic 3" alt="Product Image">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="product-details">
+            <h3 style="color: rgb(68, 68, 172); font-size: 15px; font-family: sans-serif;">Sneaker Company</h3>
+            <h1>Summar Limited Edition Sneakers</h1>
+            <p class="description">These low-profile sneakers are your perfect casual wear<br> companion. Featuring a durable rubber outer sole,<br>they'll withstand everything the weather can offer.</p>
+            <p class="price">&#8377;499.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div id="color-options">
+            <h2>Select the Color:</h2>
+            <div class="color-option" style="background-color: #000" onclick="changeColor('#000')"></div>
+            <div class="color-option" style="background-color: #fff; border: 2px solid #000" onclick="changeColor('#fff')"></div>
+            <div class="color-option" style="background-color: #00f" onclick="changeColor('#00f')"></div>
+        </div>
+
+        <div class="quantity-container">
+            <button class="quantity-control" id="decrease">-</button>
+            <input type="number" class="quantity-input" id="quantity" value="1" min="1">
+            <button class="quantity-control" id="increase">+</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="back-to-products">Back</button>
+        </div>
+        <ul class="cart-items">
+            <!-- Cart items will be added dynamically through JavaScript -->
+        </ul>
+    </div>
+</body>
+</html>
